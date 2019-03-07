@@ -20,8 +20,9 @@ We will be using three branches (**development**, **staging** and **master**) co
 6. Delete the merged (feature/hotfix)  branch from the repository 
 7. Merge back pull request in development branch if branch is hotfix created from **staging/master** ( Please refer examples by branches section)
 8. Switch back to branch and pull latest content merged into branch before starting any new work
-    * e.g, git pull origin **development**
-
+   ```
+      e.g, git pull origin development
+   ```
 ### Branch Protections
 We need to add some rules in order to protect branch from delete or unauthorized access for merge or changes.
 
@@ -46,12 +47,17 @@ We need to add some rules in order to protect branch from delete or unauthorized
 1. development
     * To work on features branches
     * Convention: **feature**-[FeatureName]
-        
-        e.g, git checkout **feature**-[FeatureName]
-    * Once feature is completed, push into server
     
-        e.g, git push origin **feature**-[FeatureName]
-    * Goto git, create a pull request against development branch ( change and select development branch as the default branch would be master )
+      ```
+         e.g, git checkout feature-[FeatureName]
+      ```
+    * Once feature is completed, push into server
+
+      ```
+         e.g, git push origin feature-[FeatureName]
+      ```
+     
+     * Goto Github, create a pull request against development branch ( change and select development branch as the default branch would be master )
 
 2. staging
     * To merge all release related features from development branch 
